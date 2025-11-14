@@ -16,8 +16,6 @@ namespace Tyuiu.VashumirskayaEV.Sprint2.Task0.V14.Test
             bool[] wait = new bool[6] { true, false, true, false, true, false };
 
             CollectionAssert.AreEqual(wait, res);
-
-
         }
     }
 }
