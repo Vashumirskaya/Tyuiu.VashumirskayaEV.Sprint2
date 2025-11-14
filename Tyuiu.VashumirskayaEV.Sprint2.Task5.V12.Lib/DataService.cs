@@ -27,7 +27,10 @@ namespace Tyuiu.VashumirskayaEV.Sprint2.Task5.V12.Lib
                 n--;
             }
 
-            return $"{n}.{m}.{g}";
+            string day = n.ToString("D2");
+            string month = m.ToString("D2");
+
+            return $"{day}.{month}.{g}";
         }
     }
 }
