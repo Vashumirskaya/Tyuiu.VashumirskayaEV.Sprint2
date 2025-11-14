@@ -6,11 +6,13 @@ namespace Tyuiu.VashumirskayaEV.Sprint2.Task7.V12.Lib
     {
         public bool CheckDotInShadedArea(double x, double y)
         {
-            bool aboveParabola = y >= Math.Pow(x, 2);
+            bool belowParabola = y <= Math.Pow(x, 2);
 
             bool belowLine = y <= 2 - x;
 
-            return aboveParabola && belowLine;
+            bool rightHalf = x >= 0;
+
+            return belowParabola && belowLine && rightHalf;
         }
     }
 }
