@@ -6,7 +6,7 @@ namespace Tyuiu.VashumirskayaEV.Sprint2.Task6.V7.Lib
     {
         public string FindMonthName(int startYear, int n)
         {
-            int totalMonths = n;
+            int totalMonths = n + 1;
 
             int monthNumber = (totalMonths % 12) == 0 ? 12 : (totalMonths % 12);
 
