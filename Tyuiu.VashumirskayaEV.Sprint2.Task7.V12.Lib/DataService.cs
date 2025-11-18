@@ -15,8 +15,9 @@ namespace Tyuiu.VashumirskayaEV.Sprint2.Task7.V12.Lib
 
             bool first = belowParabola && aboveLine;
             bool second = aboveParabola && belowLine;
+            bool third = belowParabola && belowLine;
 
-            return first || second;
+            return first || second || third;
             
         }
     }
