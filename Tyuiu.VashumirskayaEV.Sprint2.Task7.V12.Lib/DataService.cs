@@ -7,18 +7,8 @@ namespace Tyuiu.VashumirskayaEV.Sprint2.Task7.V12.Lib
         public bool CheckDotInShadedArea(double x, double y)
         {
 
-            bool belowParabola = y <= Math.Pow(x, 2);
-            bool aboveParabola = y >= Math.Pow(x, 2);
+            return (y >= x * x && y <= 2 - x) || (y <= x * x && y >= 2 - x);
 
-            bool belowLine = y <= 2 - x;
-            bool aboveLine = y >= 2 - x;
-
-            bool first = belowParabola && aboveLine;
-            bool second = aboveParabola && belowLine;
-            bool third = belowParabola && belowLine;
-
-            return first || second || third;
-            
         }
     }
 }
