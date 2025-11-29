@@ -7,9 +7,9 @@ namespace Tyuiu.VashumirskayaEV.Sprint2.Task7.V12.Lib
         public bool CheckDotInShadedArea(double x, double y)
         {
 
-            bool leftArea = (x <= 0) && (y >= 2 - x);
+            bool leftArea = (y >= 0) && (y <= 2 - x) && (y <= x*x);
 
-            bool rightArea = (x >= 0) && (y <= 2 - x);
+            bool rightArea = (y < x*x) && (y >= 2 - x);
 
             return leftArea || rightArea;
 
